@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+h1 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+
+}
+br {
+    display: none;
+}
+p {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+.all {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: left;
+}
+.orange {
+    background-color: hsl(31, 77%, 52%);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 45px;
+}
+.light {
+    background-color: hsl(184, 100%, 22%);
+    padding: 45px;
+
+}
+.dark {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 40px;
+
+}
+.btn {
+    cursor: pointer;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 20px;
+    padding: 13px 30px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.btn:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    outline: 2px hsl(0, 0%, 95%) solid ;
+}
+.orange button {
+    color: hsl(31, 77%, 52%);
+}
+.light button {
+    color: hsl(184, 100%, 22%);
+}
+.dark button {
+    color: hsl(179, 100%, 13%);
+}
+.orange p, .light p, .dark p {
+    line-height: 25px;
+    width: 240px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 20px;
+}
+.dark p {
+    width: 230px;
+}
+@media screen and (min-width:768px) {
+    .all {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 450px;
+        /* padding: px; */
+    }
+    .btn {
+        margin-top: 40px;
+    }
+    .orange {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .dark {
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 8px;
+    }
+    .orange p, .light p, .dark p {
+        line-height: 25px;
+        width: 200px;
+        color: hsla(0, 0%, 100%, 0.75);
+        padding-bottom: 20px;
+    }
+    .light p {
+        width: 210px;
+    }
+    br {
+        display: block;
+    }
+}
